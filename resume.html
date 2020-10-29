@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KTR</title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="left">
+			<a href="index.html" class="logo"><img src="img/logo-black.svg" alt=""></a>
+			<a href="#" class="language">RU</a>
+			<ul class="social-menu">
+				<li><a href="#"><img src="img/insta-black.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/fb-black.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/youtube-black.svg" alt=""></a></li>
+			</ul>
+		</div>
+		<div class="right">
+			<ul class="main-menu">
+				<li class="drop-item">
+					<a href="resume.html">Продукты и услуги</a>
+					<button type="button">Продукты и услуги</button>
+					<ul class="drop-menu">
+						<li><a href="#">Pumps and seals repair area</a></li>
+						<li><a href="#">Electric motors repair area</a></li>
+						<li><a href="#">Welding workshop - ASME certified</a></li>
+						<li><a href="#">Machining workshop - wide fleet of CNC machines</a></li>
+						<li><a href="#">Gas Turbines repair area</a></li>
+						<li><a href="#">Electric and gas furnaces</a></li>
+						<li><a href="#">Pipe Double Joint Welding</a></li>
+						<li><a href="#">Geosynthetic material</a></li>
+						<li><a href="#">Ремонт топливных форсунок GT и уплотнения сухого газа - строится СП «КТР-Этос»</a></li>
+						<li><a href="#">KTR BASE</a></li>
+						<li><a href="#">KTR MACHINERY</a></li>
+						<li><a href="#">KTR WORKS IN TENGIZ</a></li>
+						<li><a href="#">KTR WORKS IN ALMATY</a></li>
+						<li><a href="#">Service Team + ANPZ </a></li>
+					</ul>
+				</li>
+				<li class="drop-item">
+					<a href="#">Совместные предприятия</a>
+					<button type="button">Совместные предприятия</button>
+					<ul class="drop-menu">
+						<li><a href="#">Pumps and seals repair area</a></li>
+						<li><a href="#">Electric motors repair area</a></li>
+						<li><a href="#">Welding workshop - ASME certified</a></li>
+						<li><a href="#">Machining workshop - wide fleet of CNC machines</a></li>
+						<li><a href="#">Gas Turbines repair area</a></li>
+						<li><a href="#">Electric and gas furnaces</a></li>
+						<li><a href="#">Pipe Double Joint Welding</a></li>
+						<li><a href="#">Geosynthetic material</a></li>
+						<li><a href="#">Ремонт топливных форсунок GT и уплотнения сухого газа - строится СП «КТР-Этос»</a></li>
+						<li><a href="#">KTR BASE</a></li>
+						<li><a href="#">KTR MACHINERY</a></li>
+						<li><a href="#">KTR WORKS IN TENGIZ</a></li>
+						<li><a href="#">KTR WORKS IN ALMATY</a></li>
+						<li><a href="#">Service Team + ANPZ </a></li>
+					</ul>
+				</li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Карьера</a></li>
+				<li class="active"><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<a href="#" class="drop-icon">
+			<img src="img/drop-icon-black.svg" class="black" alt="">
+		</a>
+		<a href="#" class="close-icon">
+			<img src="img/close-icon-black.svg" class="black" alt="">
+		</a>
+	</header>
+
+	<section class="resume-wrapper">
+		<div class="container">
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="career.html"> - Карьера</a></li>
+				<li><a href="#"> - Менеджер по продажам</a></li>
+				<li><span> - Отправить резюме</span></li>
+			</ul>
+			<form id="resume-form" method="get" action="">
+			
+				<div class="form-header">
+					<h1>Отправить резюме</h1>
+					<label class="fileUpload">
+						<input type="file" class="uploadlogo">
+						<img src="img/upload-icon.svg" alt="">
+						<span>Загрузить свое резюме</span>
+					</label>
+				</div>
+				
+				<div class="error-block">
+					<div>						
+						<img src="img/danger-icon.svg" alt="">
+						<span>Ошибка! <br>Не все поля заполнены</span>
+					</div>
+				</div>
+				
+				<div class="form-body">
+				
+					<div class="info">						
+						<h3>Информация</h3>
+						
+						<div class="info-inputs">
+							<div class="input-wrap">
+								<p class="label">ФИО Кандидата</p>
+								<input type="text" placeholder="Введите кандидата" name="candidate" required>
+								<p class="error-msg">
+									<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+									<span class="text">Имя заполнено неверно</span>
+								</p>
+							</div>
+							<div class="input-wrap">
+								<p class="label">Дата рождения</p>
+								<input type="text" placeholder="Введите дату" name="birth-date" class="birth-date-input" required>
+								<p class="error-msg">
+									<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+									<span class="text">Дата заполнена неверно</span>
+								</p>
+							</div>
+							<div class="select-wrap select-wrap2">
+								<p class="label">Резидент</p>
+								<select id="country" required name="country">
+							      <option></option>
+								  <option value="2">Six Sigma2</option>
+								  <option value="3">Six Sigma3</option>
+								  <option value="4">Six Sigma4</option>
+								  <option value="5">Six Sigma5</option>
+								</select>
+								<p class="error-msg">
+									<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+									<span class="text">Резидент заполнен неверно</span>
+								</p>
+							</div>
+							<div class="input-wrap">
+								<p class="label">Телефон</p>
+								<input type="text" placeholder="Введите ваш телефон" name="phone" class="phone-number-input" required>
+								<p class="error-msg">
+									<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+									<span class="text">Номер заполнен неверно</span>
+								</p>
+							</div>
+							<div class="input-wrap">
+								<p class="label">Электронный адрес</p>
+								<input type="email" placeholder="Введите вашу почту" name="email" required>
+								<p class="error-msg">
+									<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+									<span class="text">Адрес заполнен неверно</span>
+								</p>
+							</div>
+						</div>
+						
+						<div class="languages">
+							<h4>Владение языками</h4>
+							<ul class="languages-inputs list">
+								<li>
+									<div class="select-wrap select-wrap2">
+										<select class="language" required name="language">
+										  <option></option>
+										  <option value="2">Six Sigma2</option>
+										  <option value="3">Six Sigma3</option>
+										  <option value="4">Six Sigma4</option>
+										  <option value="5">Six Sigma5</option>
+										</select>
+										<p class="error-msg">
+											<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+											<span class="text">Язык заполнен неверно</span>
+										</p>
+									</div>
+									<div class="select-wrap select-wrap2 level-select">
+										<select class="level" required name="level">
+										  <option></option>
+										  <option value="2">Six Sigma2</option>
+										  <option value="3">Six Sigma3</option>
+										  <option value="4">Six Sigma4</option>
+										  <option value="5">Six Sigma5</option>
+										</select>
+										<p class="error-msg">
+											<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+											<span class="text">Уровень заполнен неверно</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+							<button type="button" class="add">Указать еще один язык</button>
+						</div>
+						
+						<div class="programms">
+							<h4>Знание компьютерных программ</h4>
+							<ul class="programms-inputs list">
+								<li>
+									<div class="select-wrap select-wrap2">
+										<select class="programm" required name="programm">
+										  <option></option>
+										  <option value="2">Six Sigma2</option>
+										  <option value="3">Six Sigma3</option>
+										  <option value="4">Six Sigma4</option>
+										  <option value="5">Six Sigma5</option>
+										</select>
+										<p class="error-msg">
+											<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+											<span class="text">Программа заполнена неверно</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+							<button type="button" class="add">Указать еще одну программу</button>
+						</div>
+						
+					</div>
+					
+					<div class="education">
+						<h3>Образование</h3>
+						<ul class="education-inputs list">
+							<li>
+								<div class="top">
+									<div class="select-wrap select-wrap2">
+										<p class="label">Уровень</p>
+										<select class="education-level" required name="education-level">
+										  <option></option>
+										  <option value="2">Six Sigma2</option>
+										  <option value="3">Six Sigma3</option>
+										  <option value="4">Six Sigma4</option>
+										  <option value="5">Six Sigma5</option>
+										</select>
+										<p class="error-msg">
+											<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+											<span class="text">Уровень заполнен неверно</span>
+										</p>
+									</div>
+									<div class="input-wrap">
+										<p class="label">Учебное заведение</p>
+										<input type="text" placeholder="Введите наименование" name="institute" required>
+										<p class="error-msg">
+											<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+											<span class="text">Наименование заполнено неверно</span>
+										</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="input-wrap">
+										<p class="label">Факультет</p>
+										<input type="text" placeholder="Введите факультет" name="faculty" required>
+										<p class="error-msg">
+											<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+											<span class="text">Факультет заполнен неверно</span>
+										</p>
+									</div>
+									<div class="input-wrap date">
+										<p class="label">Год окончания</p>
+										<input type="text" placeholder="Введите дату" name="end-date" required>
+										<p class="error-msg">
+											<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+											<span class="text">Дата заполнена неверно</span>
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<button type="button" class="add">Указать еще одно место обучения</button>
+					</div>
+					
+					<div class="work">
+						<h3>Опыт работы</h3>
+						<div class="radio-buttons">
+							<label class="radio-wrap">
+								<input type="radio" value="yes" name="work" checked>
+								<span class="icon"></span>
+								<span class="text">Есть опыт работы</span>
+							</label>
+							<label class="radio-wrap">
+								<input type="radio" value="no" name="work">
+								<span class="icon"></span>
+								<span class="text">Нет опыта работы</span>
+							</label>
+						</div>
+						<div class="working-info">							
+							<ul class="work-places list">
+								<li>
+									<div class="input-wrap">
+										<p class="label">Место работы</p>
+										<input type="text" placeholder="Наименование компании" name="work-place" required>
+										<p class="error-msg">
+											<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+											<span class="text">Место работы заполнено неверно</span>
+										</p>
+									</div>
+									<div class="years">
+										<div class="input-wrap">
+											<p class="label">Год работы</p>
+											<input type="text" placeholder="От" name="work-year-start" required>
+											<p class="error-msg">
+												<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+												<span class="text">Год заполнен неверно</span>
+											</p>
+										</div>
+										<div class="input-wrap">
+											<input type="text" placeholder="До" name="work-year-end" required>
+											<p class="error-msg">
+												<span class="icon"><img src="img/danger-icon.svg" alt=""></span>
+												<span class="text">Год заполнен неверно</span>
+											</p>
+										</div>
+									</div>
+									<div class="input-wrap">
+										<p class="label">Квалифицированные навыки</p>
+										<input type="text" placeholder="Опишите полученные навыки" name="one">
+									</div>
+									<div class="textarea-wrap">
+										<p class="label">Дополнительная информация</p>
+										<textarea placeholder="Введите дополнительную информацию"></textarea>
+									</div>
+								</li>
+							</ul>
+							<button type="button" class="add">Указать еще одно место работы</button>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="form-footer">
+					<button type="submit" class="send">Отправить</button>
+					<button type="button" class="cancel">Отменить</button>
+				</div>
+				
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer-wrapper">
+				<div class="logo-wrap">
+					<a href="index.html" class="footer-logo"><img src="img/logo-white.svg" alt=""></a>
+					<p>KazTurboRemont <br>2019 год. Все права защищены.</p>
+					<a href="mailto:info@ktr.kz" class="mail">info@ktr.kz</a>
+					<a href="tel:+77172576282" class="phone">+7 (7172) 57 62 82</a>
+					<a href="tel:+77273441039" class="phone">+7 7273 44 10 39</a>
+				</div>
+				<div class="menu-wrapper">
+					<div class="menu-wrap">
+						<a href="#">Продукты и услуги</a>
+						<ul>
+							<li><a href="#">Pumps and seals repair area</a></li>
+							<li><a href="#">Electric motors repair area</a></li>
+							<li><a href="#">Welding workshop - ASME certified</a></li>
+							<li><a href="#">Gas Turbines repair area</a></li>
+							<li><a href="#">Electric and gas furnaces</a></li>
+							<li><a href="#">Посмотреть все</a></li>
+						</ul>
+					</div>
+					<div class="menu-wrap">
+						<a href="#">Карьера</a>
+						<ul>
+							<li><a href="#">Вакансии в г. Нур-Султан</a></li>
+							<li><a href="#">Вакансии в г. Алматы</a></li>
+							<li><a href="#">Вакансии в г. Атырау</a></li>
+							<li><a href="#">Стажировка</a></li>
+							<li><a href="#">Отправить резюме</a></li>
+						</ul>
+						<a href="#" style="margin-bottom: 0; margin-top: 20px">Новости</a>
+					</div>
+					<div class="menu-wrap">
+						<a href="#">Совместные <br>предприятия</a>
+						<ul>
+							<li><a href="#">KTR Ethosenergy</a></li>
+							<li><a href="#">KTR Tecnimont</a></li>
+						</ul>
+					</div>
+					<div class="menu-wrap">
+						<a href="#">Контакты</a>
+					</div>
+				</div>
+				<div class="social-wrap">
+					<h2>Мы в соц. сетях</h2>
+					<ul class="social-menu white">
+						<li><a href="#"><img src="img/in-white.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/fb-white.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/youtube-white.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<p class="brand-text">Разработано в <a href="#">Appazov</a> & <a href="#">AngryCode</a></p>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.inputmask.bundle.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
